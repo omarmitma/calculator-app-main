@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilo.css">
+  
+</head>
+<body class="theme1">
+  <main>
+    <div class="wrap">
+      <div class="header">
+        <div class="title">
+          <h1>calc</h1>
+        </div>
+        <div class="themeWrap">
+          <h2>THEME</h2>
+          <div class="themes">
+            <div>
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <input type="range" value="1" min="1" max="3" id="toggle" oninput="themeToggle()">
+          </div>
+        </div>
+      </div>
+      <textarea class="screen" id="txtscreen" readonly></textarea>
+      <div class="keyPad">
+        <button class="key" onclick="presskey(7)">7</button>
+  
+        <button class="key" onclick="presskey(8)">8</button>
+  
+        <button class="key" onclick="presskey(9)">9</button>
+  
+        <button class="key del" onclick="clearDigit()">DEL</button>
+  
+        <button class="key" onclick="presskey(4)">4</button>
+  
+        <button class="key" onclick="presskey(5)">5</button>
+  
+        <button class="key" onclick="presskey(6)">6</button>
+  
+        <button class="key" onclick="presskey('+')">+</button>
+  
+        <button class="key" onclick="presskey(1)">1</button>
+  
+        <button class="key" onclick="presskey(2)">2</button>
+  
+        <button class="key" onclick="presskey(3)">3</button>
+  
+        <button class="key" onclick="presskey('-')">-</button>
+  
+        <button class="key" onclick="presskey('.')">.</button>
+  
+        <button class="key" onclick="presskey(0)">0</button>
+  
+        <button class="key" onclick="presskey('/')">/</button>
+        
+        <button class="key" onclick="presskey('*')">x</button>
+  
+        <button class="key reset" onclick="clearScreen()">RESET</button>
+  
+        <button class="key igual" onclick="calc()">=</button>
+  
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/omarmitma">Omar Mitma</a>.
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
